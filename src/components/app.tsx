@@ -8,8 +8,9 @@ import Header from "./header";
 
 const App: FunctionalComponent = () => {
     let currentUrl: string;
-    const handleRoute = (e: RouterOnChangeArgs) => {
+    const handleRoute = (e: RouterOnChangeArgs): void => {
         currentUrl = e.url;
+        console.log("currentUrl", currentUrl);
     };
 
     return (
