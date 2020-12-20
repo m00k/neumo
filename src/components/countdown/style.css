@@ -1,0 +1,33 @@
+.countdown {
+    border-radius: 50%;
+    background: linear-gradient(145deg, #aab18e, #8f9578);
+    box-shadow:  10px 10px 10px #9da384, 
+                 -10px -10px 10px #a1a786;
+    height: 300px;
+    margin: 60px auto;
+    width: 300px;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+.bar {
+    background: #00569f;
+    box-shadow: inset 5px 5px 5px #00437c,
+        inset -5px -5px 5px #0069c2;
+    border-radius: 50%;
+    display: grid;
+    align-items: center;
+   -ms-flex-pack: center;
+    justify-content: center;
+    height: 260px;
+    width: 260px;
+}
+
+.barInner {
+    background: #9fa585;
+    box-shadow: -5px -5px 5px #0069c2, 5px 5px 5px #00437c;
+    border-radius: 50%;
+    height: 220px;
+    width: 220px;
+}
