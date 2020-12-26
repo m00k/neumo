@@ -22,6 +22,7 @@
 }
 
 .btn.active {
+	color: var(--cl-hot);
     box-shadow: inset var(--shdw-size) var(--shdw-size) var(--shdw-blr) var(--cl-bg-shadow), 
     inset var(--shdw-size-i) var(--shdw-size-i) var(--shdw-blr) var(--cl-bg-highlight);
 }
