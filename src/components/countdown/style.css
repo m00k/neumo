@@ -1,8 +1,8 @@
 .countdown {
     border-radius: 50%;
-    background: linear-gradient(145deg, #aab18e, #8f9578);
-    box-shadow:  10px 10px 10px #9da384, 
-                 -10px -10px 10px #a1a786;
+    background: linear-gradient(145deg, var(--cl-bg-highlight), var(--cl-bg-shadow));
+    /* box-shadow:  10px 10px 10px var(--cl-bg-highlight), 
+                 -10px -10px 10px var(--cl-bg-shadow); */
     height: 300px;
     margin: 60px auto;
     width: 300px;
@@ -12,9 +12,11 @@
 }
 
 .bar {
-    background: #00569f;
-    box-shadow: inset 5px 5px 5px #00437c,
-        inset -5px -5px 5px #0069c2;
+    background: var(--cl-hot);
+    /* box-shadow: inset 5px 5px 5px #00437c,
+        inset -5px -5px 5px #0069c2; */
+    box-shadow: inset 5px 5px 10px var(--cl-hot-shadow),
+                inset -5px -5px 10px var(--cl-hot-highlight);
     border-radius: 50%;
     display: grid;
     align-items: center;
@@ -25,8 +27,10 @@
 }
 
 .barInner {
-    background: #9fa585;
-    box-shadow: -5px -5px 5px #0069c2, 5px 5px 5px #00437c;
+    background: var(--cl-bg);
+    /* box-shadow: -5px -5px 5px #0069c2, 5px 5px 5px #00437c; */
+    box-shadow:     -5px -5px 10px var(--cl-hot-highlight),
+                    5px 5px 10px var(--cl-hot-shadow);
     border-radius: 50%;
     height: 220px;
     width: 220px;

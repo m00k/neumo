@@ -1,6 +1,9 @@
 .home {
-	background: #9fa585;
 	padding: 56px 20px;
 	min-height: 100%;
 	width: 100%;
+}
+
+.home h1 {
+	color: var(--cl-hot);
 }

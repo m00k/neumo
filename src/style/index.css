@@ -1,12 +1,25 @@
+:root {
+	--cl-bg: #444449;
+	--cl-bg-highlight: #6d6d75;
+	--cl-bg-shadow: #1b1b1d;
+	--cl-fg: #fff;
+	--cl-hot: hotpink;
+	--cl-hot-highlight: #ffa8ff;
+	--cl-hot-shadow: #662a48;
+	--cl-secondary: #00569f;
+	--cl-secondary-highlight: #008afe;
+	--cl-secondary-shadow: #002240;
+}
+
 html, body {
 	height: 100%;
 	width: 100%;
 	padding: 0;
 	margin: 0;
-	background: #FAFAFA;
+	background: var(--cl-bg);
 	font-family: sans-serif;
 	font-weight: 400;
-	color: #444;
+	color: var(--cl-fg);
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 }
