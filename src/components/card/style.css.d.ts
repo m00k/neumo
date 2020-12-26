@@ -2,7 +2,6 @@
 declare namespace StyleCssNamespace {
     export interface IStyleCss {
         card: string;
-        home: string;
     }
 }
 

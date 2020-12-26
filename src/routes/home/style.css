@@ -7,3 +7,14 @@
 .home h1 {
 	color: var(--cl-hot);
 }
+
+.card {
+    width: 90%;
+    height: 200px;
+    margin: 0 auto;
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    color: var(--cl-hot);
+    font-size: 3rem;  /* TODO (cb): typography */
+}
