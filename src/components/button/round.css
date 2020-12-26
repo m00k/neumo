@@ -1,0 +1,17 @@
+.btn {
+	--shdw-size-i: calc(-1 * var(--shdw-size));
+	--shdw-blr: calc(var(--shdw-size) * 1.5);
+}
+
+.btn {
+    border-radius: 50%;
+	color: var(--cl-fg);
+	box-shadow: var(--shdw-size) var(--shdw-size) var(--shdw-blr) var(--cl-bg-shadow),
+				var(--shdw-size-i) var(--shdw-size-i) var(--shdw-blr) var(--cl-bg-highlight);
+}
+
+.btn.active {
+    background-color: var(--cl-hot);
+    box-shadow: var(--shdw-size) var(--shdw-size) var(--shdw-blr) var(--cl-hot-shadow), 
+        var(--shdw-size-i) var(--shdw-size-i) var(--shdw-blr) var(--cl-hot-highlight);
+}

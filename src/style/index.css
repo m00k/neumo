@@ -9,6 +9,8 @@
 	--cl-secondary: #00569f;
 	--cl-secondary-highlight: #008afe;
 	--cl-secondary-shadow: #002240;
+
+	--shdw-size: 3px;
 }
 
 html, body {

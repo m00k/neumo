@@ -1,4 +1,7 @@
 .home {
+    --btn-rd-sz: 100px;
+    --btn-rd-sz-l: calc(var(--btn-rd-sz) * 1.5);
+    --btn-rd-sz-s: calc(var(--btn-rd-sz) * .5);
 	padding: 56px 20px;
 	min-height: 100%;
 	width: 100%;
@@ -8,13 +11,37 @@
 	color: var(--cl-hot);
 }
 
+.btnRd {
+    width: var(--btn-rd-sz);
+    height: var(--btn-rd-sz);
+}
+
+.btnRdLarge {
+    width: var(--btn-rd-sz-l);
+    height: var(--btn-rd-sz-l);
+}
+
+.btnRdSmall {
+    width: var(--btn-rd-sz-s);
+    height: var(--btn-rd-sz-s);
+}
+
 .card {
+    color: var(--cl-hot);
     width: 90%;
     height: 200px;
     margin: 0 auto;
     display: grid;
     align-content: center;
     justify-content: center;
-    color: var(--cl-hot);
     font-size: 3rem;  /* TODO (cb): typography */
+}
+
+.action {
+    align-items: center;
+    display: grid;
+    justify-content: center;
+    margin: 5rem auto 0;
+    justify-items: center;
+    grid-template-columns: .5fr 1fr 1fr 1fr .5fr;
 }
