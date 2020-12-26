@@ -1,0 +1,27 @@
+.btn {
+    --btn-height: 44px;
+	--shdw-size: calc(var(--btn-height) / 30);
+	--shdw-size-i: calc(-1 * var(--shdw-size));
+	--shdw-blr: calc(var(--shdw-size) * 1.5);
+	--btn-brdr-rds: 3px;
+}
+
+.btn {
+    border-radius: var(--btn-brdr-rds);
+	display: inline-block;
+	height: var(--btn-height);
+	line-height: var(--btn-height);
+	padding: 0 15px;
+	min-width: 50px;
+	text-align: center;
+	text-decoration: none;
+	color: var(--cl-fg);
+	background: var(--cl-bg);
+	box-shadow: inset var(--shdw-size) var(--shdw-size) var(--shdw-blr) var(--cl-bg-highlight), 
+				inset var(--shdw-size-i) var(--shdw-size-i) var(--shdw-blr) var(--cl-bg-shadow);
+}
+
+.btn.active {
+    box-shadow: inset var(--shdw-size) var(--shdw-size) var(--shdw-blr) var(--cl-bg-shadow), 
+    inset var(--shdw-size-i) var(--shdw-size-i) var(--shdw-blr) var(--cl-bg-highlight);
+}

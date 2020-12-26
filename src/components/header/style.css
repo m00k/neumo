@@ -1,15 +1,9 @@
 .header {
-	--btn-height: 56px;
-	--shdw-size: calc(var(--btn-height) / 30);
-	--shdw-size-i: calc(-1 * var(--shdw-size));
-	--shdw-blr: calc(var(--shdw-size) * 1.5);
-	--btn-brdr-rds: 3px;
-
 	position: fixed;
 	left: 0;
 	top: 0;
 	width: 100%;
-	height: var(--btn-height);
+	height: 60px;
 	padding: 12px;
 	z-index: 50;
 }
@@ -19,7 +13,7 @@
 	margin: 0;
 	padding: 0 15px;
 	font-size: 24px;
-	line-height: var(--btn-height);
+	line-height: 44px;
 	font-weight: 400;
 }
 
@@ -30,26 +24,5 @@
 
 .header nav a {
 	margin-left: 10px;
-	border-radius: var(--btn-brdr-rds);
 	display: inline-block;
-	height: 44px;
-	line-height: 44px;
-	padding: 0 15px;
-	min-width: 50px;
-	text-align: center;
-	text-decoration: none;
-	color: var(--cl-fg);
-	background: var(--cl-bg);
-	box-shadow: inset var(--shdw-size) var(--shdw-size) var(--shdw-blr) var(--cl-bg-highlight), 
-				inset var(--shdw-size-i) var(--shdw-size-i) var(--shdw-blr) var(--cl-bg-shadow);
-}
-
-.header nav a:hover,
-.header nav a:active {
-	/* TODO */
-}
-
-.header nav a.active {
-	box-shadow: inset var(--shdw-size) var(--shdw-size) var(--shdw-blr) var(--cl-bg-shadow), 
-				inset var(--shdw-size-i) var(--shdw-size-i) var(--shdw-blr) var(--cl-bg-highlight);
 }
