@@ -2,7 +2,6 @@
     --btn-rd-sz: min(15vw, 100px);
     --btn-rd-sz-l: calc(var(--btn-rd-sz) * 1.5);
     --btn-rd-sz-s: calc(var(--btn-rd-sz) * .5);
-	padding: 56px 20px;
 	min-height: 100%;
 	width: 100%;
 }

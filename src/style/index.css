@@ -31,5 +31,7 @@ html, body {
 }
 
 #app {
-	height: 100%;
+	margin: 0 auto;
+	max-width: 900px;
+	padding: 60px 20px;
 }
