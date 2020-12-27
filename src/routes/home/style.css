@@ -8,7 +8,10 @@
 }
 
 .home h1 {
-	color: var(--cl-hot);
+    color: var(--cl-hot);
+    text-shadow: var(--shdw-size) var(--shdw-size) var(--shdw-blr) var(--cl-bg-highlight),
+				var(--shdw-size-i) var(--shdw-size-i) var(--shdw-blr) var(--cl-bg-shadow);
+    background-clip: text;
 }
 
 .btnRd {
@@ -19,6 +22,10 @@
 .btnRdLarge {
     width: var(--btn-rd-sz-l);
     height: var(--btn-rd-sz-l);
+
+    display: grid;
+    align-items: center;
+    justify-content: center;
 }
 
 .btnRdSmall {
@@ -26,15 +33,46 @@
     height: var(--btn-rd-sz-s);
 }
 
-.card {
-    color: var(--cl-hot);
-    width: 90%;
-    height: 200px;
-    margin: 0 auto;
+.btnInner {
+    height: calc(var(--btn-rd-sz-l) - 20px);
+    width: calc(var(--btn-rd-sz-l) - 20px);
+
+    border-radius: 50%;
+    color: var(--cl-fg);
+    background-color: var(--cl-hot);
+	box-shadow: var(--shdw-size) var(--shdw-size) var(--shdw-blr) var(--cl-bg-highlight),
+                var(--shdw-size-i) var(--shdw-size-i) var(--shdw-blr) var(--cl-bg-shadow);
+    
     display: grid;
     align-content: center;
     justify-content: center;
-    font-size: 3rem;  /* TODO (cb): typography */
+    font-size: 56px;
+    font-weight: bold;
+    padding-left: 10px;
+    padding-bottom: 8px;
+}
+
+.card {
+    background: var(--cl-bg);
+    box-shadow: var(--shdw-size) var(--shdw-size) var(--shdw-blr) var(--cl-bg-shadow), var(--shdw-size-i) var(--shdw-size-i) var(--shdw-blr) var(--cl-bg-highlight);
+    border-radius: 10px;
+    padding: 1rem;
+}
+
+.card h1 {
+    padding: 0;
+    margin: 0;
+    font-size: 2rem;
+    align-self: start;
+}
+
+.cardText {
+    font-size: 1rem;
+    color: var(--cl-fg);
+    box-shadow: var(--shdw-size) var(--shdw-size) var(--shdw-blr) var(--cl-bg-highlight), var(--shdw-size-i) var(--shdw-size-i) var(--shdw-blr) var(--cl-bg-shadow);
+    padding: 1rem;
+    margin-top: 1rem;
+    width: 100%;
 }
 
 .action {

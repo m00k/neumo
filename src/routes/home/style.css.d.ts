@@ -2,10 +2,12 @@
 declare namespace StyleCssNamespace {
     export interface IStyleCss {
         action: string;
+        btnInner: string;
         btnRd: string;
         btnRdLarge: string;
         btnRdSmall: string;
         card: string;
+        cardText: string;
         home: string;
     }
 }

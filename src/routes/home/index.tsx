@@ -11,7 +11,16 @@ const Home: FunctionalComponent = () => {
             <h1>Home</h1>
             <p>This is the Home component.</p>
             <Countdown />
-            <div class={`${cardStyle.card} ${style.card}`}>Foo</div>
+            <div class={`${cardStyle.card} ${style.card}`}>
+                <h1>Foo</h1>
+                <div class={style.cardText}>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Sapiente a nam pariatur tenetur nesciunt veritatis
+                    consequuntur neque architecto eum praesentium perspiciatis
+                    modi saepe, distinctio dolor, illum tempora velit error?
+                    Aut.
+                </div>
+            </div>
             <div class={style.action}>
                 <div
                     class={`${style.btnRd} ${btnRoundStyle.btn} ${style.btnRdSmall}`}
@@ -19,7 +28,9 @@ const Home: FunctionalComponent = () => {
                 <div class={`${style.btnRd} ${btnRoundStyle.btn}`}></div>
                 <div
                     class={`${style.btnRd} ${btnRoundStyle.btn} ${style.btnRdLarge}`}
-                ></div>
+                >
+                    <div class={style.btnInner}>▶</div>
+                </div>
                 <div class={`${style.btnRd} ${btnRoundStyle.btn}`}></div>
                 <div
                     class={`${style.btnRd} ${btnRoundStyle.btn} ${style.btnRdSmall}`}
