@@ -1,8 +1,7 @@
 .btn {
     --btn-height: 44px;
-	--shdw-size: calc(var(--btn-height) / 30);
 	--shdw-size-i: calc(-1 * var(--shdw-size));
-	--shdw-blr: calc(var(--shdw-size) * 1.5);
+	--shdw-blr: calc(var(--shdw-size) * 1);
 	--btn-brdr-rds: 3px;
 }
 

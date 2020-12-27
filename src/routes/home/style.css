@@ -1,5 +1,5 @@
 .home {
-    --btn-rd-sz: 100px;
+    --btn-rd-sz: min(15vw, 100px);
     --btn-rd-sz-l: calc(var(--btn-rd-sz) * 1.5);
     --btn-rd-sz-s: calc(var(--btn-rd-sz) * .5);
 	padding: 56px 20px;
@@ -82,4 +82,5 @@
     margin: 5rem auto 0;
     justify-items: center;
     grid-template-columns: .5fr 1fr 1fr 1fr .5fr;
+    max-width: 900px;
 }
