@@ -1,13 +1,11 @@
 .btn {
-	--btn-sz: 100px;
+	--btn-sz: 100%;
+	--shdw-size-i: calc(-1 * var(--shdw-size));
+	--shdw-blr: calc(var(--shdw-size) * 1.5);
 	width: var(--btn-sz);
 	height: var(--btn-sz);
 	border: none;
-}
-
-.btn {
-	--shdw-size-i: calc(-1 * var(--shdw-size));
-	--shdw-blr: calc(var(--shdw-size) * 1.5);
+	fill: currentColor;
 	cursor: pointer;
 	display: grid;
 	align-items: center;
@@ -26,21 +24,21 @@
 				var(--shdw-size-i) var(--shdw-size-i) var(--shdw-blr) var(--cl-bg-highlight);
 }
 
-/* .btn:active {
-    background-color: var(--cl-hot);
-    box-shadow: var(--shdw-size) var(--shdw-size) var(--shdw-blr) var(--cl-hot-shadow), 
-        var(--shdw-size-i) var(--shdw-size-i) var(--shdw-blr) var(--cl-hot-highlight);
-} */
-
 .btnInner {
 	box-shadow: var(--shdw-size) var(--shdw-size) var(--shdw-blr) var(--cl-bg-highlight),
 		var(--shdw-size-i) var(--shdw-size-i) var(--shdw-blr) var(--cl-bg-shadow);
 	
 	border-radius: 50%;
     display: grid;
-    align-content: center;
-    justify-content: center;
+    align-items: center;
+    justify-items: center;
     width: 85%;
 	height: 85%;
 	padding-top: 3%;
 }
+
+/* .btn:active {
+	background-color: var(--cl-hot);
+	box-shadow: var(--shdw-size) var(--shdw-size) var(--shdw-blr) var(--cl-hot-shadow), 
+		var(--shdw-size-i) var(--shdw-size-i) var(--shdw-blr) var(--cl-hot-highlight);
+} */

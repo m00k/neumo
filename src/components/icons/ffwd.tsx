@@ -1,14 +1,22 @@
 import { FunctionalComponent, h } from "preact";
 
-const FfwdIcon: FunctionalComponent = () => {
+export interface FfwdIconProps {
+    width?: string;
+    height?: string;
+}
+
+const FfwdIcon: FunctionalComponent<FfwdIconProps> = ({
+    width,
+    height
+}: FfwdIconProps) => {
     return (
         <svg
             xmlns="http://www.w3.org/2000/svg"
             // eslint-disable-next-line react/no-unknown-property
             enable-background="new 0 0 24 24"
             viewBox="0 0 24 24"
-            width="100%"
-            height="100%"
+            width={width || "100%"}
+            height={height || "100%"}
         >
             <g>
                 <rect fill="none" height="100%" width="100%"></rect>

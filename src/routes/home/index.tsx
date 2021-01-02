@@ -1,6 +1,5 @@
 import { FunctionalComponent, h } from "preact";
 import Button from "../../components/button";
-import * as btnRoundStyle from "../../components/button/round.css";
 import * as cardStyle from "../../components/card/style.css";
 import Countdown from "../../components/countdown";
 import FfwdIcon from "../../components/icons/ffwd";
@@ -27,32 +26,31 @@ const Home: FunctionalComponent = () => {
                 </div>
             </div>
             <div class={style.action}>
-                <div
-                    class={`${style.btnRd} ${btnRoundStyle.btn} ${style.btnRdSmall}`}
-                >
-                    <RewIcon />
+                <div class={`${style.btnRdSmall}`}>
+                    <Button>
+                        <RewIcon width="60%" height="60%" />
+                    </Button>
                 </div>
-                <div class={`${style.btnRd} ${btnRoundStyle.btn}`}>
-                    <PrevIcon />
+                <div class={`${style.btnRd}`}>
+                    <Button>
+                        <PrevIcon width="60%" height="60%" />
+                    </Button>
                 </div>
-                <div
-                    class={`${style.btnRd} ${btnRoundStyle.btn} ${style.btnRdLarge}`}
-                >
-                    <div class={style.btnInner}>
-                        <PlayIcon />
-                    </div>
+                <div class={`${style.btnRdLarge}`}>
+                    <Button>
+                        <PlayIcon width="60%" height="60%" />
+                    </Button>
                 </div>
-                <div class={`${style.btnRd} ${btnRoundStyle.btn}`}>
-                    <NextIcon />
+                <div class={`${style.btnRd}`}>
+                    <Button>
+                        <NextIcon width="60%" height="60%" />
+                    </Button>
                 </div>
-                <div
-                    class={`${style.btnRd} ${btnRoundStyle.btn} ${style.btnRdSmall}`}
-                >
-                    <FfwdIcon />
+                <div class={`${style.btnRdSmall}`}>
+                    <Button>
+                        <FfwdIcon width="60%" height="60%" />
+                    </Button>
                 </div>
-            </div>
-            <div class={style.centered}>
-                <Button label={"foo"}></Button>
             </div>
         </div>
     );

@@ -1,27 +1,26 @@
-import { FunctionComponent, h } from "preact";
+import { ComponentChildren, FunctionComponent, h } from "preact";
 import { useState } from "preact/hooks";
 import * as style from "./button.css";
 
 export interface ButtonProps {
-    label: string;
+    children: ComponentChildren;
 }
 
-const Button: FunctionComponent<ButtonProps> = ({ label }: ButtonProps) => {
+const Button: FunctionComponent<ButtonProps> = ({ children }: ButtonProps) => {
     const [down, setDown] = useState<boolean>(false);
-    const handlePointerEvent = (e: Event): void => {
-        setDown(prev => !prev);
-        e.preventDefault();
-    };
+    const handlePointerEvent = (): void => setDown(prev => !prev);
 
     return (
         <button
-            onMouseDown={handlePointerEvent}
-            onTouchStart={handlePointerEvent}
-            onMouseUp={handlePointerEvent}
-            onTouchEnd={handlePointerEvent}
+            onPointerDown={handlePointerEvent}
+            onPointerUp={handlePointerEvent}
             class={`${style.btn}`}
         >
-            {down ? <div class={style.btnInner}>{label}</div> : label}
+            {down ? (
+                <div class={style.btnInner}>{children}</div>
+            ) : (
+                <>{children}</>
+            )}
         </button>
     );
 };

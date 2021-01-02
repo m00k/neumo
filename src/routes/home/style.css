@@ -43,8 +43,8 @@
                 var(--shdw-size-i) var(--shdw-size-i) var(--shdw-blr) var(--cl-bg-shadow);
     
     display: grid;
-    align-content: center;
-    justify-content: center;
+    align-items: center;
+    justify-items: center;
     font-size: 56px;
     font-weight: bold;
 
@@ -83,11 +83,4 @@
     justify-items: center;
     grid-template-columns: .5fr 1fr 1fr 1fr .5fr;
     max-width: 900px;
-}
-
-.centered {
-    display: grid;
-    align-items: center;
-    justify-items: center;
-    margin: 1rem;
 }
