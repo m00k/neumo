@@ -3,9 +3,11 @@ import Button from "../../components/button";
 import * as btnRoundStyle from "../../components/button/round.css";
 import * as cardStyle from "../../components/card/style.css";
 import Countdown from "../../components/countdown";
+import FfwdIcon from "../../components/icons/ffwd";
 import NextIcon from "../../components/icons/next";
 import PlayIcon from "../../components/icons/play";
 import PrevIcon from "../../components/icons/prev";
+import RewIcon from "../../components/icons/rew";
 import * as style from "./style.css";
 
 const Home: FunctionalComponent = () => {
@@ -27,7 +29,9 @@ const Home: FunctionalComponent = () => {
             <div class={style.action}>
                 <div
                     class={`${style.btnRd} ${btnRoundStyle.btn} ${style.btnRdSmall}`}
-                ></div>
+                >
+                    <RewIcon />
+                </div>
                 <div class={`${style.btnRd} ${btnRoundStyle.btn}`}>
                     <PrevIcon />
                 </div>
@@ -43,7 +47,9 @@ const Home: FunctionalComponent = () => {
                 </div>
                 <div
                     class={`${style.btnRd} ${btnRoundStyle.btn} ${style.btnRdSmall}`}
-                ></div>
+                >
+                    <FfwdIcon />
+                </div>
             </div>
             <div class={style.centered}>
                 <Button label={"foo"}></Button>
