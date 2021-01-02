@@ -1,9 +1,9 @@
 import { FunctionalComponent, h } from "preact";
+import Button from "../../components/button";
+import * as btnRoundStyle from "../../components/button/round.css";
+import * as cardStyle from "../../components/card/style.css";
 import Countdown from "../../components/countdown";
 import * as style from "./style.css";
-import * as cardStyle from "../../components/card/style.css";
-import * as btnRoundStyle from "../../components/button/round.css";
-
 
 const Home: FunctionalComponent = () => {
     return (
@@ -35,6 +35,9 @@ const Home: FunctionalComponent = () => {
                 <div
                     class={`${style.btnRd} ${btnRoundStyle.btn} ${style.btnRdSmall}`}
                 ></div>
+            </div>
+            <div class={style.centered}>
+                <Button label={"foo"}></Button>
             </div>
         </div>
     );

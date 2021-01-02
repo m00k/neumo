@@ -6,11 +6,11 @@
 	--cl-hot: hotpink;
 	--cl-hot-highlight: #ffa8ff;
 	--cl-hot-shadow: #662a48;
-	--cl-secondary: #00569f;
-	--cl-secondary-highlight: #008afe;
+	--cl-secondary: #00569f; /* #578dba */
+	--cl-secondary-highlight: #008afe; /* #6fb4ee */
 	--cl-secondary-shadow: #002240;
 
-	--shdw-size: 3px;
+	--shdw-size: 2px;
 }
 
 html, body {
