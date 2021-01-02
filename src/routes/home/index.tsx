@@ -3,6 +3,7 @@ import Button from "../../components/button";
 import * as btnRoundStyle from "../../components/button/round.css";
 import * as cardStyle from "../../components/card/style.css";
 import Countdown from "../../components/countdown";
+import PlayIcon from "../../components/icons/play";
 import * as style from "./style.css";
 
 const Home: FunctionalComponent = () => {
@@ -29,7 +30,9 @@ const Home: FunctionalComponent = () => {
                 <div
                     class={`${style.btnRd} ${btnRoundStyle.btn} ${style.btnRdLarge}`}
                 >
-                    <div class={style.btnInner}>▶</div>
+                    <div class={style.btnInner}>
+                        <PlayIcon />
+                    </div>
                 </div>
                 <div class={`${style.btnRd} ${btnRoundStyle.btn}`}></div>
                 <div

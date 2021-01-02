@@ -47,8 +47,9 @@
     justify-content: center;
     font-size: 56px;
     font-weight: bold;
-    padding-left: 10px;
-    padding-bottom: 8px;
+    padding: 10%;
+
+    fill: var(--cl-fg);
 }
 
 .card {
