@@ -16,6 +16,9 @@
 .btnRd {
     width: var(--btn-rd-sz);
     height: var(--btn-rd-sz);
+
+    padding: calc(var(--btn-rd-sz) / 10);
+    fill: var(--cl-fg);
 }
 
 .btnRdLarge {
@@ -33,9 +36,6 @@
 }
 
 .btnInner {
-    height: calc(var(--btn-rd-sz-l) - 20px);
-    width: calc(var(--btn-rd-sz-l) - 20px);
-
     border-radius: 50%;
     color: var(--cl-fg);
     background-color: var(--cl-hot);
@@ -47,9 +47,9 @@
     justify-content: center;
     font-size: 56px;
     font-weight: bold;
-    padding: 10%;
 
-    fill: var(--cl-fg);
+    width: 100%;
+    height: 100%;
 }
 
 .card {
