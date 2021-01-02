@@ -8,13 +8,17 @@ export interface ButtonProps {
 
 const Button: FunctionComponent<ButtonProps> = ({ label }: ButtonProps) => {
     const [down, setDown] = useState<boolean>(false);
-    const handleMouseDown = (): void => setDown(prev => !prev);
-    const handleMouseUp = (): void => setDown(prev => !prev);
+    const handlePointerEvent = (e: Event): void => {
+        setDown(prev => !prev);
+        e.preventDefault();
+    };
 
     return (
         <button
-            onMouseDown={handleMouseDown}
-            onMouseUp={handleMouseUp}
+            onMouseDown={handlePointerEvent}
+            onTouchStart={handlePointerEvent}
+            onMouseUp={handlePointerEvent}
+            onTouchEnd={handlePointerEvent}
             class={`${style.btn}`}
         >
             {down ? <div class={style.btnInner}>{label}</div> : label}
