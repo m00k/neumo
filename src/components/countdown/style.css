@@ -26,7 +26,7 @@
     width: 260px;
 }
 
-.barInner {
+.bar:after {
     background: var(--cl-bg);
     /* box-shadow: -5px -5px 5px #0069c2, 5px 5px 5px #00437c; */
     box-shadow:     -5px -5px 10px var(--cl-hot-highlight),
@@ -34,4 +34,5 @@
     border-radius: 50%;
     height: 220px;
     width: 220px;
+    content: '';    
 }

@@ -84,3 +84,33 @@
     grid-template-columns: .5fr 1fr 1fr 1fr .5fr;
     max-width: 900px;
 }
+
+.countdown {
+    display: grid;
+    justify-items: center;
+    margin: 2rem;
+    width: 350px;
+    height: 350px;
+}
+
+.pie {
+    height: 300px;
+    width: 300px;
+    position: absolute;
+    box-shadow: -5px -5px 10px rgba(0, 0, 0, .4),
+        5px 5px 10px rgba(255, 255, 255, .3);
+    border-radius: 50%;
+    margin: 25px;
+}
+
+.pieCenter {
+    height: 250px;
+    width: 250px;
+    position: absolute;
+    box-shadow: -5px -5px 10px rgba(255, 255, 255, .3),
+        5px 5px 10px rgba(0, 0, 0, .4);
+    border-radius: 50%;
+    background-color: var(--cl-bg);
+    margin: 50px;
+    background: linear-gradient(145deg, var(--cl-bg-highlight), var(--cl-bg-shadow));
+}

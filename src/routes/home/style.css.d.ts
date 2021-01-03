@@ -8,7 +8,10 @@ declare namespace StyleCssNamespace {
         btnRdSmall: string;
         card: string;
         cardText: string;
+        countdown: string;
         home: string;
+        pie: string;
+        pieCenter: string;
     }
 }
 

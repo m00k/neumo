@@ -7,6 +7,8 @@ import NextIcon from "../../components/icons/next";
 import PlayIcon from "../../components/icons/play";
 import PrevIcon from "../../components/icons/prev";
 import RewIcon from "../../components/icons/rew";
+import PieSlice from "../../components/pieslice";
+import * as countdownStyle from "../../components/countdown/style.css";
 import * as style from "./style.css";
 
 const Home: FunctionalComponent = () => {
@@ -51,6 +53,29 @@ const Home: FunctionalComponent = () => {
                         <FfwdIcon width="60%" height="60%" />
                     </Button>
                 </div>
+            </div>
+            <div class={`${style.countdown} ${countdownStyle.countdown}`}>
+                <div class={style.pie}>
+                    <PieSlice
+                        bgcolor={"hotpink"}
+                        color={"white"}
+                        clipIf={true}
+                        fractionStart={0}
+                        fractionEnd={0.33}
+                        text={""}
+                    />
+                </div>
+                <div class={style.pie}>
+                    <PieSlice
+                        bgcolor={"#578dba"}
+                        color={"white"}
+                        clipIf={true}
+                        fractionStart={0.33}
+                        fractionEnd={1}
+                        text={""}
+                    />
+                </div>
+                <div class={style.pieCenter}></div>
             </div>
         </div>
     );

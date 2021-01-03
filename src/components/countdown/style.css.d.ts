@@ -2,7 +2,6 @@
 declare namespace StyleCssNamespace {
     export interface IStyleCss {
         bar: string;
-        barInner: string;
         countdown: string;
     }
 }
