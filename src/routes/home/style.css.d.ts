@@ -12,6 +12,7 @@ declare namespace StyleCssNamespace {
         home: string;
         pie: string;
         pieCenter: string;
+        pieShadow: string;
     }
 }
 

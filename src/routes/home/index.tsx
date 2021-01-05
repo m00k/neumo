@@ -57,23 +57,25 @@ const Home: FunctionalComponent = () => {
             <div class={`${style.countdown} ${countdownStyle.countdown}`}>
                 <div class={style.pie}>
                     <PieSlice
-                        bgcolor={"hotpink"}
+                        bgcolor={"#578dba"}
                         color={"white"}
                         clipIf={true}
                         fractionStart={0}
                         fractionEnd={0.33}
                         text={""}
                     />
+                    <div class={style.pieShadow}></div>
                 </div>
                 <div class={style.pie}>
                     <PieSlice
-                        bgcolor={"#578dba"}
+                        bgcolor={"hotpink"}
                         color={"white"}
                         clipIf={true}
                         fractionStart={0.33}
                         fractionEnd={1}
                         text={""}
                     />
+                    <div class={style.pieShadow}></div>
                 </div>
                 <div class={style.pieCenter}></div>
             </div>
